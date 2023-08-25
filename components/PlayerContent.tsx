@@ -98,6 +98,18 @@ const PlayerContent: React.FC<PlayerContentProps> = ({ song, songUrl }) => {
         </div>
       </div>
       <div className="flex md:hidden col-auto w-full justify-end items-center">
+        <div className="flex p-2 gap-2">
+          <AiFillStepBackward
+            onClick={onPlayPrevious}
+            size={30}
+            className="text-neutral-400 cursor-pointer hover:text-white transition"
+          />
+          <AiFillStepForward
+            onClick={onPlayNext}
+            size={30}
+            className="text-neutral-400 cursor-pointer hover:text-white transition"
+          />
+        </div>
         <div
           onClick={handlePlay}
           className="h-10 w-10 flex items-center justify-center rounded-full bg-white p-1 cursor-pointer"
